@@ -13,6 +13,13 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
     
+    override func viewDidLoad() {
+        // Always call the super implementation of viewDidLoad()
+        super.viewDidLoad()
+        
+        print("ConversionViewController loaded it's view")
+    }
+    
     var farenheitValue: Double? {
         didSet {
             updateCelsiusLabel()
